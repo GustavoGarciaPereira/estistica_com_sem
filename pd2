@@ -1,0 +1,16 @@
+digraph G {
+	overlap=scale splines=true
+	edge [fontsize=12]
+	node [fillcolor="#cae6df" shape=circle style=filled]
+	node [shape=box style=""]
+	SatisfTrab [label=SatisfTrab]
+	Autonomia [label=Autonomia]
+	Idade [label=Idade]
+	Renda [label=Renda]
+	Autonomia -> Renda [label="-0.021\np-val: 0.02"]
+	Idade -> Renda [label="0.163\np-val: 0.00"]
+	Idade -> Autonomia [label="1.567\np-val: 0.00"]
+	Autonomia -> SatisfTrab [label="0.016\np-val: 0.37"]
+	Idade -> SatisfTrab [label="0.008\np-val: 0.94"]
+	Renda -> SatisfTrab [label="0.092\np-val: 0.66"]
+}
